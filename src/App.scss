@@ -1,0 +1,86 @@
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 1300px;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: navy;
+
+  .todo-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+
+    input {
+      padding: 10px;
+      margin-right: 10px;
+      font-size: 16px;
+      border: 1px solid purple;
+      border-radius: 20px;
+      background-color: white;
+      color: black;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+      background-color: purple;
+    }
+  }
+
+  .filters {
+    display: flex;
+    justify-content: last baseline;
+    margin-bottom: 20px;
+
+    button {
+      padding: 10px 15px;
+      margin: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: purple;
+      color: white;
+    }
+  }
+
+  .todo-list {
+    .todo-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+
+      &.completed {
+        text-decoration: line-through;
+        color: grey;
+      }
+
+      input {
+        padding: 5px;
+        margin-right: 10px;
+      }
+
+      button {
+        padding: 5px 10px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #ff0000;
+        border: none;
+        cursor: pointer;
+
+        &:nth-of-type(1) {
+          background-color: #00ff00;
+        }
+
+        &:nth-of-type(2) {
+          background-color: #0000ff;
+        }
+      }
+    }
+  }
+}

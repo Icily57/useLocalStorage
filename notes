@@ -1,0 +1,17 @@
+    <div className='app'>
+    <div className={`todo-item ${todo.completed ? 'completed' : ''}`}>
+      {isEditing ? (
+        <div className='input'>
+          <input className='A' value={editText} onChange={(e) => setEditText(e.target.value)} />
+          <input className='B' type="date" value={editDate} onChange={(e) => setEditDate(e.target.value)} />
+          <button onClick={handleUpdate}>Update</button>
+        </div>
+      ) : (
+        <div className='edit'>
+          <span onClick={() => toggleComplete(index)}>{todo.text} (Due: {todo.date})</span>
+          <button onClick={() => setIsEditing(true)}>Edit</button>
+          <button onClick={() => removeTodo(index)}>Remove</button>
+        </div>
+      )}
+    </div>
+    </div>
