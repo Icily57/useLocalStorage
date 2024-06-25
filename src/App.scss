@@ -4,7 +4,7 @@
   flex-direction: column;
   text-align: center;
   width: 1300px;
-  height: 100%;
+  height: 100px;
   font-family: Arial, sans-serif;
   background-color: navy;
 
@@ -74,7 +74,7 @@
         cursor: pointer;
 
         &:nth-of-type(1) {
-          background-color: #00ff00;
+          background-color: plum;
         }
 
         &:nth-of-type(2) {
